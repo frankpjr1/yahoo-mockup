@@ -3,68 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <title>Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports &amp; Videos</title>
+    <style>
+        nav {
+                padding-top:50px;
+                    }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:0 20vw;
+        }
+
+        img > nav {
+
+        }
+
+        #nav-search {
+            width: 300px;
+            height: 44px;
+            padding: 1px 10px 1px 12px;
+            border: 1px solid #188fff;
+            border-radius: 4px  0 0 4px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 1.43;
+            font-size: 14px;
+
+        }
+
+        .nav-search-container {
+            display: flex;
+            margin: 0 30px;
+        }
+
+        #sign-in {
+            min-width: 60px;
+            height: 48px;
+            background-color: #188FFF;
+            border:0;
+            border-radius: 0 5px 5px 0;
+
+        }
+
+        .sign-in-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sign-in-submit {
+            height: 26px;
+            width: 68px;
+            color: #6001D2;
+            font-weight: bold;
+            border: #6001D2 2px solid;
+            background-color: #fff;
+            border-radius: 50vw;
+        }
+
+        .nav-sign-in-icon {
+            height: 32px;
+            width: 32px;
+            margin-left: 20px;
+        }
+
+        .nav-mail-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-mail-container p {
+            font-size: .8em;
+            line-height: 1.4;
+            padding-top: 4px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 <!-- Header -->
 <header>
+
+    <!-- nav search #188fff -->
     <nav>
-        <label for="nav-search"></label>
-        <button class="nav-search-btn" id="nav-search" alt="navigation search"></button>
 
-        <button class="sign-in" type="submit"></button>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" style="height: 20px;width: 20px;color: darkcyan"
-             fill="none"
-             viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" style="color: blue;width: 20px;height: 20px;"
-             fill="none"
-             viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"/>
-        </svg>
-        <p>Mail</p>
+       <!--  nav-search container-->
+        <div class="nav-container">
+            <!-- yahoo logo -->
+            <img src="https://s.yimg.com/rz/p/yahoo_homepage_en-US_s_f_p_bestfit_homepage_2x.png" alt="Yahoo.com" width="174" height="48">
 
-        <svg xmlns="http://www.w3.org/2000/svg" style="height: 20px;width: 20px;color: cornflowerblue" class="h~-6 w-6"
-             fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"/>
-        </svg>
-        <p>Mail</p>
+            <div class="nav-search-container">
+                <label for="nav-search"></label>
+                <input name="nav-search" id="nav-search"/>
+
+                <!-- nav search button -->
+                <label for="sign-in"></label>
+                <input type="button" id="sign-in">
+            </div>
+            <!-- nav sign-in Container -->
+
+            <div class="sign-in-container">
+                <label for="sign-in-submit"></label>
+                <button type="submit" id="sign-in-submit">Sign-in</button>
+                <img class="nav-sign-in-icon" src="images/bell.png" alt="notification bell">
+                <div class="nav-mail-container">
+                        <img class="nav-sign-in-icon" src="images/yahoo-mail-icon.png" alt="notification bell">
+                        <p>Mail</p>
+                </div>
+            </div>
+        </div>
     </nav>
-
-    <img src="#" alt="add" width="100px" height="100px">
-
-    <ul>News</ul>
-    <ul>Finance</ul>
-    <ul>Sports</ul>
-    <ul>Entertainment</ul>
-    <ul>Life</ul>
-    <ul>Covid-19</ul>
-    <ul>Shopping</ul>
-    <ul>Tech-Tips</ul>
-    <ul>Yahoo Plus</ul>
-    <ul>More</ul>
-
-    <img src="#" alt="" width="100px" height="100px">
 </header>
-
-<main>
-<aside><h2>Trending Now</h2>
-    <h2>Holiday Gifts</h2>
-    <ol>Laura Ingram You</ol>
-    <ol>Thanksgiving</ol>
-    <ol>Tina Peters</ol>
-    <ol>Marjorie Taylor Green</ol>
-    <ol>Total Fitness</ol>
-    <ol>Michael Thomas</ol>
-    <ol>Michael JordanWeb Development</ol>
-    <ol>Web Development</ol>
-    <ol>Karyn Peters</ol>
-    <ol>Student Loan Relief</ol>
-    <img src="#" alt="">
-</aside>
-</main>
 </body>
 </html>
+
+
