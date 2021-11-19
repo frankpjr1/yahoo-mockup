@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports &amp; Videos</title>
     <style>
+
+        /* styles for the nav */
         nav {
                 padding-top:50px;
                     }
@@ -15,9 +17,7 @@
             padding:0 20vw;
         }
 
-        img > nav {
-
-        }
+        /* styles for nav search */
 
         #nav-search {
             width: 300px;
@@ -32,10 +32,14 @@
 
         }
 
+        /* styles for nav search container */
+
         .nav-search-container {
             display: flex;
             margin: 0 30px;
         }
+
+        /* styles for sign-in */
 
         #sign-in {
             min-width: 60px;
@@ -45,13 +49,13 @@
             border-radius: 0 5px 5px 0;
 
         }
-
+        /* styles for sign-in container */
         .sign-in-container {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
+        /* styles for sign-in submit */
         #sign-in-submit {
             height: 26px;
             width: 68px;
@@ -61,19 +65,21 @@
             background-color: #fff;
             border-radius: 50vw;
         }
-
+        /* styles for sign-in icon */
         .nav-sign-in-icon {
             height: 32px;
             width: 32px;
             margin-left: 20px;
         }
-
+        /* styles for nav mail container */
         .nav-mail-container {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
         }
+
+        /* styles for mail container paragraph */
         .nav-mail-container p {
             font-size: .8em;
             line-height: 1.4;
@@ -88,12 +94,11 @@
 
     <!-- nav search #188fff -->
     <nav>
-
-       <!--  nav-search container-->
+        <!--  nav container-->
         <div class="nav-container">
             <!-- yahoo logo -->
             <img src="https://s.yimg.com/rz/p/yahoo_homepage_en-US_s_f_p_bestfit_homepage_2x.png" alt="Yahoo.com" width="174" height="48">
-
+            <!--  nav-search container-->
             <div class="nav-search-container">
                 <label for="nav-search"></label>
                 <input name="nav-search" id="nav-search"/>
@@ -102,6 +107,7 @@
                 <label for="sign-in"></label>
                 <input type="button" id="sign-in">
             </div>
+
             <!-- nav sign-in Container -->
 
             <div class="sign-in-container">
